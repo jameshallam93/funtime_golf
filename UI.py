@@ -19,7 +19,7 @@ class UI():
         """
         Handles both single and list of entities - probably a good idea to move single into list
         """
-        self.screen.fill((0, 0, 0))
+        self.screen.fill(CONST.BLACK)
         for object in self.entities:
             if isinstance(object, list):
                 for item in object:

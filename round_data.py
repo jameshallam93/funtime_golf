@@ -12,7 +12,8 @@ round_object_schema = {
 wall_schema = {
     "x": int,
     "y": int,
-    "radius": int,
+    "width": int,
+    "height": int,
     "color": (int, int, int)
 }
 

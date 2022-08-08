@@ -1,8 +1,8 @@
 import constants as CONST
 
 
-def RESISTANCE(x):  # return 1 if x < .01 and x > 0 else .05 if x > 20 else .03
-    # TODO: smoother decceleration based on speed
+def RESISTANCE(x):
+    # TODO: smoother decceleration - fix conditional branching, hard to read currently
     if x > 0:
         if x < .0005:
             return 1

@@ -5,6 +5,7 @@ MAX_FORCE = 20
 MAX_SPEED = 100
 MASS = 1
 WHITE = (255, 255, 255)
+BLACK = (0, 0, 0)
 BALL_RADIUS = 20
 ICON = pygame.image.load("./assets/covidboy.png")
 BALL_PIC = pygame.image.load("./assets/ball1.png")
