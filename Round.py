@@ -4,17 +4,17 @@ import constants as CONST
 
 
 class Round():
-    def __init__(self, UI, ball, obstacles, hole):
+    def __init__(self, UI, ball, walls, hole):
         self.UI = UI
         self.ball = ball
-        self.obstacles = obstacles
+        self.walls = walls
         self.holes = hole
         # currently, have to feed entities in in the order you want them to be rendered - should fix this.
-        self._entities = [self.obstacles, self.holes, self.ball]
+        self._entities = [self.walls, self.holes, self.ball]
         self.shot_count = 0
         self.shot_limit = 10
         self.physics = PhysicsHandler(
-            self.ball, self.obstacles)
+            self.ball, self.walls)
 
     @property
     def entities(self):
