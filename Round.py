@@ -74,7 +74,7 @@ class Round():
                         self.ball.move(400, 300)
 
                 if self.ball.velocity == (0, 0):
-                    if event.type == pygame.MOUSEBUTTONUP:
+                    if event.type == pygame.MOUSEBUTTONDOWN:
                         # shot time baby
                         self.ball.set_in_motion(((ball_loc[0] - mouse_loc[0]) / 40),
                                                 ((ball_loc[1] - mouse_loc[1]) / 40))
